@@ -1,0 +1,15 @@
+<!-- <p>dogs-list works!</p> -->
+<section class="hero-section">
+    <h2 class="hero-text">
+        Discover pets to walk near to you
+    </h2>
+</section>
+<article class="pet-list">
+    <app-dogs-list-card *ngFor="let dog of dogsService.dogs; let i = index" [index]="i" [dog]="dog"></app-dogs-list-card>
+    <!-- <ul>
+        <li *ngFor="let dog of dogsService.dogs">
+            {{dog.name}} <p>{{dog.description}}</p>
+        </li>
+
+    </ul> -->
+</article>
